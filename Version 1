@@ -1,0 +1,22 @@
+from time import *
+
+print("Mit diesem Programm wird bei der Eingabe bis zur diesen Zahl, alle geraden Zahlen aufgezaehlt.")
+
+x = int(input("\nEingabe bis welche Zahl gerade gezÃ¤hlt werden sollte: "))
+t1 = clock()
+
+#Zaehlt und sortiert
+x = x+2
+for i in range (0, x):
+    if i%2 == 1:
+        continue
+    print(i)
+print("\nDas sind alle gerade Zahlen.")
+
+#Zeitstopp
+t2 = clock()
+t = t2-t1
+print("%.2fs" % (t))
+
+#Ende
+exit = input("\nBitte drÃ¼cke Enter um das Programm zu beenden.")
