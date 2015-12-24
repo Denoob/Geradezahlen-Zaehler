@@ -1,16 +1,18 @@
+#!/usr/bin/python
+
 from time import *
 
-print("Mit diesem Programm wird bei der Eingabe bis zur diesen Zahl, alle geraden Zahlen aufgezaehlt.")
+print("Mit diesem Programm wird bei der Eingabe bis zur dieser Zahl, alle geraden Zahlen aufgezaehlt.")
 
-x = int(input("\nEingabe bis welche Zahl gerade gezÃ¤hlt werden sollte: "))
+x = int(input("\nEingabe bis welche Zahl gerade gezaehlt werden sollte: "))
 t1 = clock()
 
 #Zaehlt und sortiert
 x = x+2
-for i in range (0, x):
+for i in range (x):
     if i%2 == 1:
         continue
-    print(i)
+    print(str(i))
 print("\nDas sind alle gerade Zahlen.")
 
 #Zeitstopp
@@ -19,4 +21,4 @@ t = t2-t1
 print("%.2fs" % (t))
 
 #Ende
-exit = input("\nBitte drÃ¼cke Enter um das Programm zu beenden.")
+exit = input("\nBitte druecke Enter um das Programm zu beenden.")
